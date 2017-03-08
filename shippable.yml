@@ -1,31 +1,24 @@
-language: java
-
-jdk:
-  - openjdk6
-  - openjdk7
-  - openjdk8
-  - oraclejdk7
-  - oraclejdk8
+language: none
   
 services:
-  #- cassandra 
-  - elasticsearch 
-  #- memcached 
-  #- mongodb 
-  #- mysql 
-  #- neo4j 
+  - cassandra 
+  #- elasticsearch 
+  - memcached 
+  - mongodb 
+  - mysql 
+  - neo4j 
   - postgres 
-  #- rabbitmq 
-  #- redis 
-  #- selenium
-  #- sqllite 
-  #- couchdb 
+  - rabbitmq 
+  - redis 
+  - selenium
+  - sqllite 
+  - couchdb 
   - rethinkdb 
-  #- riak 
+  - riak 
  
 build:
   ci:
-    - echo "this is for service test"
+    - echo "test for services"
     
   pre_ci_boot:
     image_name: drydock/u14all
