@@ -7,8 +7,8 @@ services:
   - mongodb 
   - mysql 
   - neo4j 
-  - postgres 
-  - rabbitmq 
+ # - postgres 
+ # - rabbitmq 
   - redis 
   - selenium
   - sqlite 
