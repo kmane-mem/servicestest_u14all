@@ -30,3 +30,8 @@ build:
   #  pull: true     
   
   cache: true
+  
+integrations:
+  hub:
+    - integrationName: docker
+      type: docker   
