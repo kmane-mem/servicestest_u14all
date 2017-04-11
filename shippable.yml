@@ -17,6 +17,8 @@ services:
   - riak 
  
 build:
+  pre_ci:
+    - docker build -t=shippabledocker/sampletest .
   ci:
     - echo "test for services"
     
@@ -24,3 +26,8 @@ build:
     image_name: drydock/u14all
     image_tag: master
     pull: true      
+
+integrations:
+  hub:
+    - integrationName: docker
+      type: docker   
