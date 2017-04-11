@@ -5,7 +5,7 @@ services:
   #- elasticsearch 
   - memcached 
   - mongodb 
-  - mysql 
+ # - mysql 
   - neo4j 
  # - postgres 
  # - rabbitmq 
